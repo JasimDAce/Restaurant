@@ -1,158 +1,408 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-  <header class="bg-[url(./header-bg.jpg)] h-[100vh] bg-cover bg-center flex flex-col items-start gap-8 justify-center">
-    <div class="flex flex-col items-start gap-8 justify-center m-24">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+   
+  </head>
+  <body>
+    <header
+      class="bg-[url(./header-bg.jpg)] h-[100vh] bg-cover bg-center flex flex-col items-start gap-8 justify-center font-[Poppins]"
+    >
+      <div class="flex flex-col items-start gap-8 justify-center m-24">
         <h1 class="text-7xl text-white font-bold">Fast Food Delivery</h1>
-        <p class="text-2xl text-white w-1/2">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Incidunt Perferendis Obcaecati Iste Voluptatum, Quaerat Nihil Magnam Numquam Sint?</p>
-        <button class="rounded-full bg-[#4169E1] hover:bg-white hover:text-[#4169E1] p-5 text-white shadow px-10 text-xl">Order Now</button>
-    </div>
-  </header>
-  <main>
-    <article>
-        <section class="bg-[#4169E1] h-screen ">
-            <div class="mx-24">
-                <div class="">
-                    <div>
-                        <div class="flex flex-row  gap-4 pt-10 pb-3">
-                            <h1 class="font-bold text-5xl text-white">OUR </h1>
-                            <h1 class="font-bold text-5xl text-black">MENU</h1>
-                        </div>
-                    </div>
-                    <div>
-                        <hr class="min-h-5">
-                    </div>
+        <p class="text-2xl text-white w-1/2">
+          Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Incidunt
+          Perferendis Obcaecati Iste Voluptatum, Quaerat Nihil Magnam Numquam
+          Sint?
+        </p>
+        <button
+          class="rounded-full bg-[#292929] hover:bg-[#3D3D3D] p-5 text-white shadow px-10 text-xl"
+        >
+          Order Now
+        </button>
+      </div>
+    </header>
+    <main>
+      <article>
+        <section class="bg-[#4169E1] h-screen">
+          <div class="mx-24">
+            <div class="">
+              <div>
+                <div class="flex flex-row gap-4 pt-10 pb-3">
+                  <h1 class="font-bold text-5xl text-white">OUR</h1>
+                  <h1 class="font-bold text-5xl text-black">MENU</h1>
                 </div>
-                <div class="grid grid-cols-12 mt-5 gap-4">
-                    <div class="bg-white rounded-3xl col-span-4 flex flex-col justify-center items-center">
-                        <div class="pt-4"><img class="h-[45vh] w-[45vh]" src="pizza.png" alt=""></div>
-                        <div><span class="text-sm ">PIZZA</span></div>
-                        <div class="p-3"><h1 class="text-4xl font-bold">6 Mini Pizzas</h1></div>
-                        <div class="text-2xl font-medium ">₹104.99 <sub><del>₹119.99</del></sub></div>
-                        <div class="p-5 pb-8"><button class="rounded-full bg-slate-900 hover:bg-white hover:text-black shadow p-6 px-12  text-white  text-xl">Add To Cart</button></div>
+              </div>
+              <div>
+                <hr class="min-h-5" />
+              </div>
+            </div>
+            <div class="grid grid-cols-12 mt-5 gap-4">
+              <div
+                class="bg-white text-black rounded-3xl col-span-4 flex flex-col justify-center items-center hover:translate-y-[-12px] hover:shadow-xl hover:shadow-black"
+              >
+                <div class="pt-4">
+                  <img class="h-[45vh] w-[45vh]" src="pizza.png" alt="" />
+                </div>
+                <div><span class="text-sm">PIZZA</span></div>
+                <div class="p-3">
+                  <h1 class="text-4xl font-bold">6 Mini Pizzas</h1>
+                </div>
+                <div class="text-2xl font-medium">
+                  ₹104.99 <sub><del>₹119.99</del></sub>
+                </div>
+                <div class="p-5 pb-8">
+                  <button
+                    class="rounded-full hover:bg-[#3D3D3D] p-6 px-12 text-white bg-[#292929] shadow-xl text-xl"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+              <div
+                class="bg-white text-black rounded-3xl col-span-4 flex flex-col justify-center items-center hover:translate-y-[-12px] hover:shadow-xl hover:shadow-black"
+              >
+                <div class="pt-4">
+                  <img class="h-[45vh] w-[45vh]" src="buger.png" alt="" />
+                </div>
+                <div><span class="text-sm">BURGER</span></div>
+                <div class="p-3">
+                  <h1 class="text-4xl font-bold">5 Mini Burgers</h1>
+                </div>
+                <div class="text-2xl font-medium">
+                  ₹99.99 <sub><del>₹105.99</del></sub>
+                </div>
+                <div class="p-5 pb-8">
+                  <button
+                    class="rounded-full hover:bg-[#3D3D3D] p-6 px-12 text-white bg-[#292929] shadow-xl text-xl"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+              <div
+                class="bg-white text-black rounded-3xl col-span-4 flex flex-col justify-center items-center hover:translate-y-[-12px] hover:shadow-xl hover:shadow-black"
+              >
+                <div class="pt-4">
+                  <img class="h-[45vh] w-[45vh]" src="burger2.png" alt="" />
+                </div>
+                <div><span class="text-sm">BURGER</span></div>
+                <div class="p-3">
+                  <h1 class="text-4xl font-bold">3 Meatball Burgers</h1>
+                </div>
+                <div class="text-2xl font-medium">
+                  ₹79.99 <sub><del>₹99.99</del></sub>
+                </div>
+                <div class="p-5 pb-8">
+                  <button
+                    class="rounded-full hover:bg-[#3D3D3D] p-6 px-12 text-white bg-[#292929] shadow-xl text-xl"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-[#4169E1] h-screen">
+          <div class="mx-24">
+            <div class="">
+              <div>
+                <div class="flex flex-row gap-4 pt-10 pb-3">
+                  <h1 class="font-bold text-5xl text-white">OUR</h1>
+                  <h1 class="font-bold text-5xl text-black">PRODUCTS</h1>
+                </div>
+              </div>
+              <div>
+                <hr class="min-h-5" />
+              </div>
+            </div>
+            <div class="grid grid-cols-12 mt-5 gap-4">
+              <div
+                class="bg-white text-black rounded-3xl col-span-4 flex flex-col justify-center items-start px-5 hover:translate-y-[-12px] hover:shadow-xl hover:shadow-black"
+              >
+                <div class="pt-5 pl-2">
+                  <span class="text-sm text-left">Mini Burger</span>
+                </div>
+                <div class="pt-2 text-left">
+                  <h1 class="text-5xl font-bold">Bacon Burger</h1>
+                </div>
+                <div class="pt-4 flex items-center justify-center w-[410px]">
+                  <img class="h-[45vh] w-[45vh]" src="burger3.png" alt="" />
+                </div>
+                <div
+                  class="flex flex-row justify-between w-[410px] items-center pl-2 mb-8 mt-8"
+                >
+                  <div>
+                    <div class="text-4xl font-bold">₹60.00</div>
+                    <span class="ml-1">110gr / 300 Cal</span>
+                  </div>
+
+                  <div class="text-center">
+                    <button
+                      class="rounded-[150px] border text-center border-2 border-[#4169E1] hover:text-white hover:bg-black hover:border-none shadow p-3 px-6 pb-4 text-[#4169E1] text-2xl"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white text-black rounded-3xl col-span-4 flex flex-col justify-center items-start px-5 hover:translate-y-[-12px] hover:shadow-xl hover:shadow-black"
+              >
+                <div class="pt-5 pl-2">
+                  <span class="text-sm text-left">Cheese Burger</span>
+                </div>
+                <div class="pt-2 text-left">
+                  <h1 class="text-5xl font-bold">Cheese Burger</h1>
+                </div>
+                <div class="pt-4 flex items-center justify-center w-[410px]">
+                  <img class="h-[45vh] w-[45vh]" src="burger5.png" alt="" />
+                </div>
+                <div
+                  class="flex flex-row justify-between w-[410px] items-center pl-2 mb-8 mt-8"
+                >
+                  <div>
+                    <div class="text-4xl font-bold">₹120.00</div>
+                    <span class="ml-1">140gr / 2500 Cal</span>
+                  </div>
+
+                  <div class="text-center">
+                    <button
+                      class="rounded-[150px] border text-center border-2 border-[#4169E1] hover:text-white hover:bg-black hover:border-none shadow p-3 px-6 pb-4 text-[#4169E1] text-2xl"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white text-black rounded-3xl col-span-4 flex flex-col justify-center items-start px-5 hover:translate-y-[-12px] hover:shadow-xl hover:shadow-black"
+              >
+                <div class="pt-5 pl-2">
+                  <span class="text-sm text-left">Double Burger</span>
+                </div>
+                <div class="pt-2 text-left">
+                  <h1 class="text-5xl font-bold">Double Burger</h1>
+                </div>
+                <div class="pt-4 flex items-center justify-center w-[410px]">
+                  <img class="h-[45vh] w-[45vh]" src="burger4.png" alt="" />
+                </div>
+                <div
+                  class="flex flex-row justify-between w-[410px] items-center pl-2 mb-8 mt-8"
+                >
+                  <div>
+                    <div class="text-4xl font-bold">₹240.00</div>
+                    <span class="ml-1">440gr / 600 Cal</span>
+                  </div>
+
+                  <div class="text-center">
+                    <button
+                      class="rounded-[150px] border text-center border-2 border-[#4169E1] hover:text-white hover:bg-black hover:border-none shadow p-3 px-6 pb-4 text-[#4169E1] text-2xl"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-[#4169E1] h-screen">
+          <div class="mx-24">
+            <div class="">
+              <div>
+                <div class="flex flex-row gap-4 pt-10 pb-3">
+                  <h1 class="font-bold text-5xl text-white">ABOUT</h1>
+                  <h1 class="font-bold text-5xl text-black">US</h1>
+                </div>
+              </div>
+              <div>
+                <hr class="min-h-5" />
+              </div>
+            </div>
+            <div class="grid grid-cols-12">
+              <div class="col-span-6 p-6">
+                <img
+                  class="hover:animate-bounce"
+                  src="./burgerDancing.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-span-6 p-8">
+                <h1 class="text-4xl font-bold text-white">
+                  What Is The Secret Receipe Of Our Burgers
+                </h1>
+                <p class="py-5 text-xl text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloribus deserunt itaque a omnis. Molestias, officia?
+                </p>
+                <p class="py-5 text-xl text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloribus deserunt itaque a omnis. Molestias, officia?
+                </p>
+                <p class="py-5 text-xl text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloribus deserunt itaque a omnis. Molestias, officia?
+                </p>
+                <p class="py-5 text-xl text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloribus deserunt itaque a omnis. Molestias, officia?
+                </p>
+                <button
+                  class="rounded-full bg-[#292929] my-5 hover:bg-white hover:text-[#4169E1] p-5 text-white shadow px-10 text-xl"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-[#4169E1] h-screen">
+          <div class="mx-24">
+            <div class="">
+              <div>
+                <div class="flex flex-row gap-4 pt-10 pb-3">
+                  <h1 class="font-bold text-5xl text-white">CUSTOMER'S</h1>
+                  <h1 class="font-bold text-5xl text-black">REVIEW</h1>
+                </div>
+              </div>
+              <div>
+                <hr class="min-h-5" />
+              </div>
+            </div>
+            <div class="grid grid-cols-12 mt-5 gap-4">
+              <div
+                class="bg-white text-black rounded-3xl col-span-4 flex flex-col gap-4 text-center justify-center items-center px-5 hover:translate-y-[-12px] hover:shadow-xl hover:shadow-black py-10"
+              >
+                <div>
+                  <img class="h-[25vh] w-[25vh]" src="quotes.png" alt="" />
+                </div>
+                <p class="text-lg">
+                  Dicta Totam Suscipit Vero Praesentium Excepturi Facilis, Fuga
+                  At Architecto Dolor Tempora Molestias Quam Dignissimos Sit.
+                  Molestiae Temporibus Ratione Quas Placeat Possimus!
+                </p>
+
+                <div>
+                  <img class="h-[10vh] w-[10vh] mt-8" src="lady.png" alt="" />
+                </div>
+                <div class="text-sm font-bold">Patrick Hellinger</div>
+                <div class="text-[#FFD700]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+              <div
+                class="bg-white text-black rounded-3xl col-span-4 flex flex-col gap-4 text-center justify-center items-center px-5 hover:translate-y-[-12px] hover:shadow-xl hover:shadow-black"
+              >
+                <div>
+                  <img class="h-[25vh] w-[25vh]" src="quotes.png" alt="" />
+                </div>
+                <p class="text-lg">
+                  Dicta Totam Suscipit Vero Praesentium Excepturi Facilis, Fuga
+                  At Architecto Dolor Tempora Molestias Quam Dignissimos Sit.
+                  Molestiae Temporibus Ratione Quas Placeat Possimus!
+                </p>
+
+                <div>
+                  <img class="h-[10vh] w-[10vh] mt-8" src="serena.png" alt="" />
+                </div>
+                <div class="text-sm font-bold">Helen Marksen</div>
+                <div class="text-[#FFD700]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+              <div
+                class="bg-white text-black rounded-3xl col-span-4 flex flex-col gap-4 text-center justify-center items-center px-5 hover:translate-y-[-12px] hover:shadow-xl hover:shadow-black"
+              >
+                <div>
+                  <img class="h-[25vh] w-[25vh]" src="quotes.png" alt="" />
+                </div>
+                <p class="text-lg">
+                  Dicta Totam Suscipit Vero Praesentium Excepturi Facilis, Fuga
+                  At Architecto Dolor Tempora Molestias Quam Dignissimos Sit.
+                  Molestiae Temporibus Ratione Quas Placeat Possimus!
+                </p>
+
+                <div>
+                  <img
+                    class="h-[10vh] w-[10vh] mt-8"
+                    src="willams.png"
+                    alt=""
+                  />
+                </div>
+                <div class="text-sm font-bold">Serena Williams</div>
+                <div class="text-[#FFD700]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-[#4169E1] h-screen">
+          <div class="mx-24">
+            <div class="">
+              <div>
+                <div class="flex flex-row gap-4 pt-10 pb-3">
+                  <h1 class="font-bold text-5xl text-white">CONTACT</h1>
+                  <h1 class="font-bold text-5xl text-black">US</h1>
+                </div>
+              </div>
+              <div>
+                <hr class="min-h-5" />
+              </div>
+            </div>
+            <div class="grid grid-cols-12 mt-10 gap-4">
+              
+                <iframe class="col-span-6 w-[87vh] h-[70vh] object-cover" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.3235940970079!2d8.540719273659763!3d47.3713194174677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a00aa1e1d17%3A0x278f576acdd580f5!2sStorchen%20Z%C3%BCrich%20-%20Lifestyle%20Boutique%20Hotel!5e0!3m2!1sde!2sch!4v1658505945506!5m2!1sde!2sch" allowfullscreen="" loading="lazy" ></iframe>
+                <form class="col-span-6 bg-[#292929] flex flex-col justify-center items-center text-center gap-6 py-2">
+                    <h2 class="text-5xl text-white font-bold mb-4">GET IN TOUCH</h2>
+                    <div class="bg-[#292929] border-2 border-[gray] ">
+                        <i class="fa-solid fa-user-large pl-4 text-2xl text-white"></i>
+                        <input class="w-[70vh] py-6 px-3 text-2xl bg-[#292929]" type="text" placeholder="name">
                     </div>
-                    <div class="bg-white rounded-3xl col-span-4 flex flex-col justify-center items-center">
-                        <div class="pt-4"><img class="h-[45vh] w-[45vh]" src="buger.png" alt=""></div>
-                        <div><span class="text-sm ">BURGER</span></div>
-                        <div class="p-3"><h1 class="text-4xl font-bold">5 Mini Burgers</h1></div>
-                        <div class="text-2xl font-medium ">₹99.99 <sub><del>₹105.99</del></sub></div>
-                        <div class="p-5 pb-8"><button class="rounded-full bg-slate-900 hover:bg-white hover:text-black shadow p-6 px-12  text-white  text-xl">Add To Cart</button></div>
+                    <div class="bg-[#292929] border-2 border-[gray] ">
+                       
+                        <i class="fa-solid fa-envelope pl-4 text-2xl text-white"></i>
+                        <input class="w-[70vh] py-6 px-3 text-2xl bg-[#292929]" type="email" placeholder="email">
                     </div>
-                    <div class="bg-white rounded-3xl col-span-4 flex flex-col justify-center items-center">
-                        <div class="pt-4"><img class="h-[45vh] w-[45vh]" src="burger2.png" alt=""></div>
-                        <div><span class="text-sm ">BURGER</span></div>
-                        <div class="p-3"><h1 class="text-4xl font-bold">3 Meatball Burgers</h1></div>
-                        <div class="text-2xl font-medium ">₹79.99 <sub><del>₹99.99</del></sub></div>
-                        <div class="p-5 pb-8"><button class="rounded-full bg-slate-900 hover:bg-white hover:text-black shadow p-6 px-12  text-white  text-xl">Add To Cart</button></div>
+                    <div class="bg-[#292929] border-2 border-[gray] ">
+                        <i class="fa-solid fa-phone pl-4 text-2xl text-white"></i>
+                        <input class="w-[70vh] py-6 px-3 text-2xl bg-[#292929]" type="number" placeholder="number">
                     </div>
                     
-                </div>
-            </div>
-            
-        </section>
-        <section class="bg-[#4169E1] h-screen ">
-            <div class="mx-24">
-                <div class="">
-                    <div>
-                        <div class="flex flex-row  gap-4 pt-10 pb-3">
-                            <h1 class="font-bold text-5xl text-white">OUR </h1>
-                            <h1 class="font-bold text-5xl text-black">PRODUCTS</h1>
-                        </div>
-                    </div>
-                    <div>
-                        <hr class="min-h-5">
-                    </div>
-                </div>
-                <div class="grid grid-cols-12 mt-5 gap-4">
-                    <div class="bg-white rounded-3xl col-span-4 flex flex-col justify-center items-start  px-5">
-                        <div class="pt-5 pl-2"><span class="text-sm text-left ">Mini Burger</span></div>
-                        <div class="pt-2 text-left"><h1 class="text-5xl font-bold">Bacon Burger</h1></div>
-                        <div class="pt-4 flex items-center justify-center  w-[410px]"><img class="h-[45vh] w-[45vh]" src="burger3.png" alt=""></div>
-                        <div class="flex flex-row justify-between w-[410px] items-center pl-2 mb-8 mt-8">
-                            <div>
-                                <div class="text-4xl font-bold ">₹60.00</div>
-                                <span class="ml-1">110gr / 300 Cal</span>
-                            </div>
-                            
-                            <div class=" text-center  "><button class="rounded-[150px] border text-center border-2 border-[#4169E1] hover:text-white hover:bg-black hover:border-none shadow p-3 px-6 pb-4 text-[#4169E1]  text-2xl">+</button></div>
-                        </div>
-                        
-
-                        
-                    </div>
-                    <div class="bg-white rounded-3xl col-span-4 flex flex-col justify-center items-start  px-5">
-                        <div class="pt-5 pl-2"><span class="text-sm text-left ">Cheese Burger</span></div>
-                        <div class="pt-2 text-left"><h1 class="text-5xl font-bold">Cheese Burger</h1></div>
-                        <div class="pt-4 flex items-center justify-center  w-[410px]"><img class="h-[45vh] w-[45vh]" src="burger5.png" alt=""></div>
-                        <div class="flex flex-row justify-between w-[410px] items-center pl-2 mb-8 mt-8">
-                            <div>
-                                <div class="text-4xl font-bold ">₹120.00</div>
-                                <span class="ml-1">140gr / 2500 Cal</span>
-                            </div>
-                            
-                            <div class=" text-center  "><button class="rounded-[150px] border text-center border-2 border-[#4169E1] hover:text-white hover:bg-black hover:border-none shadow p-3 px-6 pb-4 text-[#4169E1]  text-2xl">+</button></div>
-                        </div>
-                        
-
-                        
-                    </div>
-                    <div class="bg-white rounded-3xl col-span-4 flex flex-col justify-center items-start  px-5">
-                        <div class="pt-5 pl-2"><span class="text-sm text-left ">Double Burger</span></div>
-                        <div class="pt-2 text-left"><h1 class="text-5xl font-bold">Double Burger</h1></div>
-                        <div class="pt-4 flex items-center justify-center  w-[410px]"><img class="h-[45vh] w-[45vh]" src="burger4.png" alt=""></div>
-                        <div class="flex flex-row justify-between w-[410px] items-center pl-2 mb-8 mt-8">
-                            <div>
-                                <div class="text-4xl font-bold ">₹240.00</div>
-                                <span class="ml-1">440gr / 600 Cal</span>
-                            </div>
-                            
-                            <div class=" text-center  "><button class="rounded-[150px] border text-center border-2 border-[#4169E1] hover:text-white hover:bg-black hover:border-none shadow p-3 px-6 pb-4 text-[#4169E1]  text-2xl">+</button></div>
-                        </div>
-                        
-
-                        
-                    </div>
                     
-                    
-                </div>
+                 
+                                      
+                    <button class="rounded-full text-[#4169E1] text-2xl p-4 px-10 mt-4 font-bold bg-white">Contact Now</button>
+                </form>
+             
             </div>
-            
+          </div>
         </section>
-        <section class="bg-[#4169E1] h-screen ">
-            <div class="mx-24">
-                <div class="">
-                    <div>
-                        <div class="flex flex-row  gap-4 pt-10 pb-3">
-                            <h1 class="font-bold text-5xl text-white">ABOUT </h1>
-                            <h1 class="font-bold text-5xl text-black">US</h1>
-                        </div>
-                    </div>
-                    <div>
-                        <hr class="min-h-5">
-                    </div>
-                </div>
-                <div class="grid grid-cols-12">
-                    <div class= "col-span-6 p-6">
-                        <img class="hover:animate-bounce" src="./burgerDancing.png" alt="">
-                    </div>
-                    <div class="col-span-6 p-8">
-                        <h1 class="text-4xl font-bold text-white">What Is The Secret Receipe Of Our Burgers</h1>
-                        <p class="py-5 text-xl text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus deserunt itaque a omnis. Molestias, officia?</p>
-                        <p class="py-5 text-xl text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus deserunt itaque a omnis. Molestias, officia?</p>
-                        <p class="py-5 text-xl text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus deserunt itaque a omnis. Molestias, officia?</p>
-                        <p class="py-5 text-xl text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus deserunt itaque a omnis. Molestias, officia?</p>
-                        <button class="rounded-full bg-slate-900 my-5 hover:bg-white hover:text-[#4169E1] p-5 text-white shadow px-10 text-xl">Learn More</button>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-    </article>
-  </main>
-</body>
+      </article>
+    </main>
+  </body>
 </html>
